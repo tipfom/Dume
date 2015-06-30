@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Overlay Name="Couch" Interaction="True" ID="{4F5645524C41595-434F554348}" StartMode="Normal">
+  <Resources Image="Content/Overlay/Couch/Couch.png" Height="64" Width="192">
+    <Resource Sprite="False" Height="64" Width="192" Mode="Normal" X="0" Y="0"/>
+  </Resources>
+  <Interaction>
+    <Interact Key="E" Mouse="False">Lock{Char}@Me</Interact>
+  </Interaction>
+  <HitBox Visitable="False" ProjectilePermeable="True">
+    <Box Type="Rectangle" Height="64" Width="192" X="0" Y="0"/>
+  </HitBox>
+</Overlay>

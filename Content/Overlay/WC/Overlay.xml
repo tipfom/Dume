@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Overlay Name="Toilet" Interaction="True" ID="{4F5645524C41595-544F494C4554}" StartMode="Empty">
+  <Resources Image="Content/Overlay/WC/WC.png" Height="64" Width="64" >
+    <Resource Sprite="False" Mode="Empty" X="0" Y="0" Height="64" Width="64"/>
+  </Resources>
+  <Interaction>
+    <Interact Key="E" Mouse="False">Change{texture}</Interact>
+  </Interaction>
+  <HitBox>
+    <Box Type="Rectangle" Height="16" Width="64" X="0" Y="0"/>
+    <Box Type="Rectangle" Height="48" Width="52" X="6" Y="16"/>
+    <!-- circle=kreis radius und koords-->
+    <!-- bei kreis mittelpunkt, bei rechteck linke obere ecke, beide jedoch im bitmap-->
+  </HitBox>
+</Overlay>

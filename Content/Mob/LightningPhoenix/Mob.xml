@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Mob Name="Lightning Phoenix" Mode="Air" DamageTyp="Magic">
+  <Config>
+    <Resource Type="Main" Compression="Spritesheet" SpritesheetElement="SpriteInfo">Content/Mob/LightningPhoenix/me.png</Resource>
+    <!-- Type Main = Hauptimage; Compression ist selbsterklärend; SpritesheetInfo = -->
+    <Resource Type="Projectile" Compression="Single">Content/Mob/LightningPhoenix/9468_0.jpg</Resource>
+    <SpriteInfo>
+      <Sprite ID="1"></Sprite>
+      
+    </SpriteInfo>
+  </Config>
+  <Information>
+    <History>
+      
+    </History>
+  </Information>
+  <Damage Collusion="100" Projectile="20"/>
+  <Speed Movement="10" Projectile="70"/>
+</Mob>

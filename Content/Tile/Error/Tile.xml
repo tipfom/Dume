@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tile Name="Error" ID="{54494C455F-4552524F5200}" Interaction="False" Destroyable="False" Wall="False">
+  <Resources Image="Content/Tile/Error/Me.png" Height="32" Width="32" StartMode="Normal" TileSize="32">
+    <Resource Mode="Normal" Sprite="False" MinDamage="0" X="0" Y="0" Height="32" Width="32"/>
+  </Resources>
+  <Interaction>
+    <!-- Keine vorhanden :D Aber bei z.B. Tür dann halt-->
+  </Interaction>
+  <Data SlowDown="5" Shield="0" Permeable="True" Visitable="True"/>  
+</Tile>

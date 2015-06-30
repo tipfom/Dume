@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Game>
+  <Configuration>
+    <_1366px ImageSize="32" ImageScale="0.75" FontSize="13"/>
+    <_1600px ImageSize="32" ImageScale="4" FontSize="14"/>
+    <_1920px ImageSize="32" ImageScale="4" FontSize="15"/>
+    <Cursor>
+      <Attack>Content/Cursor/_CursorIcon_Attack.ico</Attack>
+      <Normal>Content/Cursor/_CursorIcon_Normal.ico</Normal>
+      <Sneaking>Content/Cursor/_CursorIcon_Sneaking.ico</Sneaking>
+      <SneakyAttacking>Content/Cursor/_CursorIcon_SneakyAttacking.ico</SneakyAttacking>
+    </Cursor>
+    <UserInterface Reload="Content/Interface/userinterface_nachladen.png" Main="Content/Interface/UI(2).png">
+      <Main Height="114" Width="1366"/>
+      <Reload Height="200" Width="200"/>
+    </UserInterface>
+    
+  </Configuration>
+  <Information>
+    <Version>Alpha - 0.1.7.4d</Version>
+    <Developer>Tim Pokart</Developer>
+    <Painter>Martin Selleng</Painter>
+    <TileData>
+      <Grass Destroyable="False" Shield="10" SlowDown="10" ID="{54494C455F-47524153530D0A00}">
+        <Resources Image="Content/Tile/Grass.png" Width="32" Height="32">
+          <Resource Condition="New" X="0" Y="0" Height="32" Width="32"/>
+        </Resources>
+      </Grass>
+      <Crate_Wooden Destroyable="True" Shield="1200" SlowDown="100" ID="{54494C455F-43524154455F574F4F44454E00}">
+        <Resources Image="Content/Tile/Crate_Wooden.png" Width="96" Height="32">
+          <Resource Condition="New" X="0" Y="0" Height="32" Width="32"/>
+          <Resource Condition="Damaged" X="32" Y="0" Height="32" Width="32"/>
+          <Resource Condition="Destroyed" X="64" Y="0" Height="32" Width="32"/>
+        </Resources>
+      </Crate_Wooden>
+      <Asphalt Destroyable="False" Shield="10" SlowDown="10" ID="{54494C455F-41535048414C5400}">
+        <Resources Image="Content/Tile/Asphalt.png" Width="32" Height="32">
+          <Resource Condition="New" X="0" Y="0" Height="32" Width="32"/>
+        </Resources>
+      </Asphalt>
+      <Door Destroyable="False" Shield="10" SlowDown="5" ID="{54494C455F-444F4F5200}">
+        <Resources Image="Content/Tile/Door.png" Width="64" Height="32">
+          <Resource Condition="New" X="0" Y="0" Height="32" Width="32" OpenMode="Open"/>
+          <Resource Condition="Damaged" X="32" Y="0" Height="32" Width="32" OpenMode="Closed"/>
+        </Resources>
+      </Door>
+      <Stone Destroyable="True" Shield="10" SlowDown="10" ID="{54494C455F-53544F4E4500}">
+        <Resources Image="Content/Tile/Stone.png" Width="96" Height="32">
+          <Resource Condition="New" X="0" Y="0" Height="32" Width="32"/>
+          <Resource Condition="Damaged" X="32" Y="0" Height="32" Width="32"/>
+          <Resource Condition="Destroyed" X="64" Y="0" Height="32" Width="32"/>
+        </Resources>
+      </Stone>
+      <Stone_Cobble Destroyable="False" Shield="10" SlowDown="15" ID="{54494C455F-53544F4E455F434F42424C4500}">
+        <Resources Image="Content/Tile/Stone_Cobble.png" Width="32" Height="32">
+          <Resource Condition="New" X="0" Y="0" Height="32" Width="32"/>
+        </Resources>
+      </Stone_Cobble>7
+      <Stone_Brick Destroyable="True" Shield="60" SlowDown="10" ID="{54494C455F-53544F4E455F425249434B00}">
+      <Resources Image="Content/Tile/Stone_Brick.png" Width="96" Height="32">
+        <Resource Condition="New" X="0" Y="0" Height="32" Width="32"/>
+        <Resource Condition="Damaged" X="32" Y="0" Height="32" Width="32"/>
+        <Resource Condition="Destroyed" X="64" Y="0" Height="32" Width="32"/>
+      </Resources>
+      </Stone_Brick>
+      <Hedge  Destroyable="True" Shield="10" SlowDown="10" ID="{54494C455F-484544474500}">
+        <Resources Image="Content/Tile/Hedge.png" Width="96" Height="32">
+          <Resource Condition="New" X="0" Y="0" Height="32" Width="32"/>
+          <Resource Condition="Damaged" X="32" Y="0" Height="32" Width="32"/>
+          <Resource Condition="Destroyed" X="64" Y="0" Height="32" Width="32"/>
+        </Resources>
+      </Hedge>
+      <Error Destroyable="False" Shield="10" SlowDown="15" ID="{54494C455F-4552524F5200}">
+        <Resources Image="Content/Tile/Error.png" Width="32" Height="32">
+          <Resource Condition="New" X="0" Y="0" Height="32" Width="32"/>
+        </Resources>
+      </Error>
+      <Gravel Destroyable="False" Shield="90" SlowDown="15" ID="{54494C455F-47524156454C00}">
+        <Resources Image="Content/Tile/Gravel.png" Width="32" Height="32">
+          <Resource Condition="New" X="0" Y="0" Height="32" Width="32"/>
+        </Resources>
+      </Gravel>
+      <Parquet Destroyable="False" Shield="90" SlowDown="15" ID="{54494C455F-5041525155455400}">
+        <Resources Image="Content/Tile/Parquet.png" Width="32" Height="32">
+          <Resource Condition="New" X="0" Y="0" Height="32" Width="32"/>
+        </Resources>
+      </Parquet>
+      <Sand Destroyable="False" Shield="10" SlowDown="20" ID="{54494C455F-53414E4400}">
+        <Resources Image="Content/Tile/Sand.png" Width="32" Height="32">
+          <Resource Condition="New" X="0" Y="0" Height="32" Width="32"/>
+        </Resources>
+      </Sand>
+      <Slab Destroyable="False" Shield="10" SlowDown="15" ID="{54494C455F-534C414200}">
+        <Resources Image="Content/Tile/Slab.png" Width="32" Height="32">
+          <Resource Condition="New" X="0" Y="0" Height="32" Width="32"/>
+        </Resources>
+      </Slab>
+      <Dirt Destroyable="False" Shield="10" SlowDown="15" ID="{54494C455F-4449525400}">
+        <Resources Image="Content/Tile/Dirt.png" Width="32" Height="32">
+          <Resource Condition="New" X="0" Y="0" Height="32" Width="32"/>
+        </Resources>
+      </Dirt>
+    </TileData>
+    <CharData>
+      <Blood>
+        <Resource>Content/Character/_CharBitmap_Blood.png</Resource>
+      </Blood>
+      <Rick>
+        <Name>Rick</Name>
+        <HealthPoints>100</HealthPoints>
+        <StandartArmor>5</StandartArmor>
+        <Resource>Content/Character/_CharBitmap_Rick.png</Resource>
+        <Speed Sneaking="4">8</Speed>
+        <!-- Format : BildName;BildName;BildName;BildName ...-->
+      </Rick>
+    </CharData>
+    <GunData>
+      <DuX127>
+        <Name>DuX - 127S</Name>
+        <!-- Angelehnt an eine Uzi-->
+        <!-- S = Shell vllt auch DuX - 127L (Laser)-->
+        <Damage>10</Damage>
+        <Ammo>40</Ammo> 
+        <!-- Munition in einem Magazin-->
+        <FireSpeed>100</FireSpeed>
+        <!-- Millisekunden-->
+        <ReloadTime>1300</ReloadTime>
+        <MaxAmmo>1200</MaxAmmo>
+        <ShellSpeed>30</ShellSpeed>
+        <!-- KP wie sich das auswirken wird-->
+        <GunResource>Content/Weapon/_GunBitmap_DuX_127S.png</GunResource>
+        <ProjectileResource Height="19" Width="7">Content/Weapon/_ProjectileBitmap_DuX_127S.png</ProjectileResource>
+        <Description>Eine Waffe, welche aus den Händen der "besten" Wissenschaftlern von DuX-Industries stammt. Leider haben diese erst nach abertausenden Tests herausgefunden, dass der Probant beim Betätigen des Abzuges nicht in den Lauf starren sollte. Während der Testphase verloren wir dadurch viele Obdachlo - äh, Wissenschaftler.</Description>
+        <Producer>DuX-Industries Corp.</Producer>
+     </DuX127>
+     </GunData>
+  </Information>
+</Game>

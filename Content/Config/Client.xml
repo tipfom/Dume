@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Client ServerIP="localhost" DyDNS="True">
+  <UDP Port="15525"/>
+  <TCP ReceivingPort="15526" SendingPort="15525"/>
+</Client>

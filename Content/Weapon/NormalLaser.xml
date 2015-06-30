@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Laser Name="Normal Laser" Modifiable="True" Producer="Nature" Type="Laser">
+  <Resource>
+    <Left X="226" Y="16" Height="21" Width="5"/>
+    <Center X="231" Y="16" Height="21" Width="2"/>
+    <Right X="233" Y="16" Height="21" Width="5"/>
+  </Resource>
+  <Stack Intervall="300" HeightIncrease="2" WidthIncrease="5" HeightStandart="21" WidthStandart="12"/>
+  <!-- Gibt das Intervall an , in dem sich der Laser aufstackt-->
+  <Data Damage="20" LaserSpeed="20">
+    <!-- Der Schaden bezieht sich auf eine Instanz-->
+    <Reload NeedBatterie="False" FireSpeed="400"></Reload>
+    <!-- Sonst müsste MaxAmmo und Ammo und ReloadTime angegeben werden bla bla bla nurt batterie-->
+    <StartPoint>
+      <Point Direction="Left" X="17" Y="21"/>
+      <Point Direction="Right" X="44" Y="19"/>
+      <Point Direction="Bottom" X="30" Y="23"/>
+      <Point Direction="Top" X="28" Y="0"/>
+      <Point Direction="TopStanding" X="28" Y="0"/>
+      <Point Direction="BottomStanding" X="28" Y="23"/>
+    </StartPoint>
+  </Data>
+  <Description>
+    
+  </Description>
+</Laser>

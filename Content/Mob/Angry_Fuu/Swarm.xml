@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Swarm Name="Swarm of Angry Fuu's">
+  <Aggressivity Player="True" Others="True" ApM="30"/>
+  <!-- ApM=Agressivität pro Member-->
+  <Parts Leader="True">
+    <Passiv Texture="Normal">Passsive Fuus</Passiv>
+    <Healing Texture="Healing" HPS="50" NeededLife="40" Count="2">Heilende Fuus</Healing>
+    <!-- HPS = HealPerSecond-->
+    <Attacking Texture="Attacking">Angreifende Fuus</Attacking>
+    <Scared WantedGab="150" Texture="Scared">Verschreckte Fuus</Scared>
+    <Pipsqueaks Speed="2" TextureSize="0.6" Texture="Normal">Winzige Fuus</Pipsqueaks>
+  </Parts>
+
+  <Abilitys>
+    <ModifyWorld DestroyBlocks="True"/>
+  </Abilitys>
+</Swarm>

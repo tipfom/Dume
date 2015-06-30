@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Map MapSize="100x100" Version="" Name="" Developer="" Spawn="100,100">
+  <CodeDef>sn=Stone,new;w=wall,new;g=grass,new</CodeDef>
+  <MapCode>20g,99w,w,99sn,w,99sn,w,99sn,99sn,99sn,99sn,99sn,99sn,99w,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn,99sn</MapCode>
+  <Objects>Chair{x=200,y=100,rotation=20}</Objects>
+  <Spawn></Spawn>
+</Map>

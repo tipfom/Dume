@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tile Name="Stone" ID="{54494C455F-53544F4E4500}" Interaction="False" Destroyable="False" Wall="False">
+  <Resources Image="Content/Tile/Stone/Me.png" Height="16" Width="16" StartMode="Normal" TileSize="16">
+    <Resource Mode="Normal" Sprite="False" MinDamage="0" X="0" Y="0" Height="16" Width="16"/>
+  </Resources>
+  <Interaction>
+    <!-- Keine vorhanden :D Aber bei z.B. Tür dann halt-->
+  </Interaction>
+  <Data SlowDown="5" Shield="0" Permeable="True" Visitable="True"/>  
+</Tile>

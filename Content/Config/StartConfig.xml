@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <Resolution>1366px</Resolution>
+  <FullScreen>false</FullScreen>
+  <Dev>True</Dev>
+  <Map>map</Map>
+  <Char>Rick</Char>
+  <Gun>DuX_127_S</Gun>
+  <ProjectName>dev_tima</ProjectName>
+    <MySQLIP>blabla.bla</MySQLIP>
+</Config>

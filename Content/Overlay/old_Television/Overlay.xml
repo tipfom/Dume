@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Overlay Name="Old Television" Interaction="True" ID="{4F5645524C41595-F54565F4F4C4400}" StartMode="On">
+  <Resources Image="Content/Overlay/old_Television/Me.png" Height="128" Width="192" >
+    <Resource Sprite="False" Mode="Off" X="0" Y="0" Height="64" Width="64"/>
+    <Resorce Sprite="True" Mode="On" SpritesheetElement="TVSprite" TextureChangingIntervall="20"/>
+  </Resources>
+  <TVSprite Count="3" Height="64" Width="64">
+    <Sprite X="0" Y="64"/>
+    <Sprite X="64" Y="64"/>
+    <Sprite X="128" Y="64"/>
+  </TVSprite>
+  <Interaction>
+    <Interact Key="E" Mouse="False">Change{texture}</Interact>
+  </Interaction>
+  <HitBox>
+    <Box Type="Rectangle" Height="54" Width="56" X="4" Y="8"/>
+    <!-- circle=kreis radius und koords-->
+    <!-- bei kreis mittelpunkt, bei rechteck linke obere ecke, beide jedoch im bitmap-->
+  </HitBox>
+</Overlay>

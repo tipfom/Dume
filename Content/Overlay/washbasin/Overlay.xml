@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Overlay Name="Washbasin" Interaction="True" ID="{4F5645524C41595-57415348574153494E}" StartMode="New">
+  <Resources Image="Content/Overlay/washbasin/waschbecken.png" Height="30" Width="24" >
+    <Resource Sprite="False" Mode="New" X="0" Y="0" Height="30" Width="24"/>
+  </Resources>
+  <Interaction>
+    <Interact Key="E" Mouse="False">Change{texture}</Interact>
+  </Interaction>
+  <HitBox>
+    <Box Type="Rectangle" Height="30" Width="24" X="0" Y="0"/>
+    <!-- circle=kreis radius und koords-->
+    <!-- bei kreis mittelpunkt, bei rechteck linke obere ecke, beide jedoch im bitmap-->
+  </HitBox>
+</Overlay>

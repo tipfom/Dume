@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Character Name="Dr. Slime" ID="{434841524143544552-4452534C494D45}">
+  <Resources Image="Content/Character/Dr.Slime/Me.png" Height="243" Width="348">
+    <Resource Transform="Human" Mode="HumanLeft" Direction="L" Sprite="True" SpritesheetElement="HumanLeft" TextureChangingIntervall="300"/>
+    <Resource Transform="Human" Mode="HumanBottom" Direction="B" Sprite="True" SpritesheetElement="HumanBottom" TextureChangingIntervall="300"/>
+    <Resource Transform="Human" Mode="HumanRight" Direction="R" Sprite="True" SpritesheetElement="HumanRight" TextureChangingIntervall="300"/>
+    <Resource Transform="Human" Mode="HumanTop" Direction="T" Sprite="True" SpritesheetElement="HumanTop" TextureChangingIntervall="300"/>
+    <Resource Transform="Human" Mode="HumanStandingTop" Direction="ST" Sprite="False" Height="60" Width="50" X="106" Y="0"/>
+    <Resource Transform="Human" Mode="HumanStandingBottom" Direction="SB" Sprite="False" Height="60" Width="50" X="106" Y="61"/>
+    <!-- Der Mode muss einzigartig sein =)-->
+    <Resource Transform="Slime" Mode="SlimeLeft" Direction="L" Sprite="True" SpritesheetElement="SlimeLeft" TextureChangingIntervall="300"/>
+    <Resource Transform="Slime" Mode="SlimeBottom" Direction="B" Sprite="True" SpritesheetElement="SlimeBottom" TextureChangingIntervall="300"/>
+    <Resource Transform="Slime" Mode="SlimeRight" Direction="R" Sprite="True" SpritesheetElement="SlimeRight" TextureChangingIntervall="300"/>
+    <Resource Transform="Slime" Mode="SlimeTop" Direction="T" Sprite="True" SpritesheetElement="SlimeTop" TextureChangingIntervall="300"/>
+    <Resource Transform="Slime" Mode="SlimeStandingTop" Direction="ST" Sprite="False" Height="60" Width="52" X="115" Y="122"/>
+    <Resource Transform="Slime" Mode="SlimeStandingBottom" Direction="SB" Sprite="False" Height="61" Width="52" X="114" Y="183"/>
+    
+    <Resource Transform="Transform" Mode="Normal" Sprite="True" SpritesheetElement="NormalTransform" TextureChangingIntervall="100"/>
+  </Resources>
+  <HumanLeft Height="60" Width="48">
+    <Sprite X="168" Y="122"/>
+    <Sprite X="217" Y="123"/>
+  </HumanLeft>
+  <HumanBottom Height="60" Width="52">
+    <Sprite X="0" Y="61"/>
+    <Sprite X="53" Y="61"/>
+  </HumanBottom>
+  <HumanRight Height="60" Width="48">
+    <Sprite X="168" Y="184"/>
+    <Sprite X="286" Y="5"/>
+  </HumanRight>
+  <HumanTop Height="60" Width="52">
+    <Sprite X="0" Y="0"/>
+    <Sprite X="53" Y="0"/>
+  </HumanTop>
+  <SlimeTop Height="60" Width="56">
+    <Sprite X="0" Y="122"/>
+    <Sprite X="57" Y="122"/>
+  </SlimeTop>
+  <SlimeBottom Height="60" Width="56">
+    <Sprite X="0" Y="183"/>
+    <Sprite X="57" Y="183"/>
+  </SlimeBottom>
+  <SlimeRight Height="63" Width="64">
+    <Sprite X="262" Y="181"/>
+    <Sprite X="285" Y="117"/>
+  </SlimeRight>
+  <SlimeLeft Height="63" Width="63">
+    <Sprite X="157" Y="58"/>
+    <Sprite X="221" Y="58"/>
+  </SlimeLeft>
+  <NormalTransformation Height="20" Width="20">
+    <Sprite X="20" Y="20"/>
+    <Sprite X="25" Y="25"/>
+  </NormalTransformation>
+  <Data>
+    <Human Speed="10" Armor="10" Damage="50"/>
+    <Slime Speed="8" Armor="10" Damage="20"/>
+    <Transform Time="2000"/>
+  </Data>
+  <HitBox>
+    <Box Mode="HumanLeft" Height="60" Width="48"/>
+    <Box Mode="HumanRight" Height="60" Width="48"/>
+    <Box Mode="HumanTop" Height="60" Width="52"/>
+    <Box Mode="HumanBottom" Height="60" Width="52"/>
+    <Box Mode="HumanStandingTop" Height="60" Width="50"/>
+    <Box Mode="HumanStandingBottom" Height="60" Width="50"/>
+
+    <Box Mode="SlimeLeft" Height="63" Width="63"/>
+    <Box Mode="SlimeRight" Height="63" Width="64"/>
+    <Box Mode="SlimeTop" Height="60" Width="56"/>
+    <Box Mode="SlimeBottom" Height="60" Width="56"/>
+    <Box Mode="SlimeStandingTop" Height="60" Width="50"/>
+    <Box Mode="SlimeStandingBottom" Height="60" Width="50"/>
+
+
+    <Box Mode="Transform" Height="10" Width="10"/>
+  </HitBox>
+</Character>

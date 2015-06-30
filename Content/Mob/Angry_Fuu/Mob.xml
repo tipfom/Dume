@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Mob Name="Angry Fuu" Mode="Ground" Health="45" ScorePoints="3">
+  <Config TextureChangingIntervall="20">
+    <Resources Count="6" MainImage="Content/Mob/Angry_Fuu/Me.png" Width="96" Height="64">
+      <Resource Mode="Normal" SpritesheetElement="MainSprite" StartIndex="0"/>
+      <Resource Mode="Stunned" SpritesheetElement="StunnedSprite" StartIndex="3"/>
+      <Resource Mode="Agressiv" SpritesheetElement="AgressivSprite" StartIndex="6"/>
+      <!-- <Resource Mode="Scared" StartIndex="9" -->
+    </Resources>
+    <!-- Warnung : !!!sinnlos!!!-->
+    <!-- Type Main = Hauptimage (unnötig aber yolo); Compression ist selbsterklärend; SpritesheetInfo = -->
+    <!-- Bei Single muss Height und Width angegeben werden-->
+    <MainSprite Count="3" Width="32" Height="32">
+      <Sprite ID="1" X="0" Y="0"/>
+      <Sprite ID="2" X="32" Y="0"/>
+      <Sprite ID="3" X="64" Y="0"/>
+    </MainSprite>
+    <StunnedSprite Count="3" Width="32" Height="32">
+      <Sprite ID="1" X="0" Y="32"/>
+      <Sprite ID="2" X="32" Y="32"/>
+      <Sprite ID="3" X="64" Y="32"/>
+    </StunnedSprite>
+    <AgressivSprite Count="3"  Width="32" Height="31">
+      <Sprite ID="1" X="1" Y="32"/>
+      <Sprite ID="2" X="33" Y="32"/>
+      <Sprite ID="3" X="65" Y="32"/>
+    </AgressivSprite>
+  </Config>
+  <Spawn SpawnRate="7000" Health="100" Shield="20" Image="Content/Mob/Angry_Fuu/Spawn.png" Height="192" Width="192" TextureChangingIntervall="350" ScorePoints="20"> 
+    <Resources>
+      <Resource Health="New" SpritesheetElement="NewSpawnSprite" StartIndex="0"/>
+      <Resource Health="Damaged" SpritesheetElement="DamagedSpawnSprite" StartIndex="3"/>
+      <Resource Health="Destroyed" SpritesheetElement="DestroyedSpawnSprite" StartIndex="5"/>
+    </Resources>
+    <NewSpawnSprite Count="3" Width="64" Height="64">
+      <Sprite ID="1" X="0" Y="0"/>
+      <Sprite ID="2" X="64" Y="0"/>
+      <Sprite ID="3" X="128" Y="0"/>
+    </NewSpawnSprite>
+    <DamagedSpawnSprite Count="2" Width="64" Height="64">
+      <Sprite ID="1" X="0" Y="64"/>
+      <Sprite ID="2" X="64" Y="64"/>
+    </DamagedSpawnSprite>
+    <DestroyedSpawnSprite Count="2" Width="64" Height="64">
+      <Sprite ID="1" X="0" Y="128"/>
+      <Sprite ID="2" X="64" Y="128"/>
+    </DestroyedSpawnSprite>
+  </Spawn>
+  
+  <Information>
+    <History>
+      Kamen aus dem Weltall 
+      Fressen Pizza
+      Gehen auf dich wegen Pizza
+    </History>
+    <Attack>
+      Wird kurz gestunnt
+      Bei berührung trotzdem damage
+    </Attack>
+  </Information>
+  <Damage Collusion="100" Hit="20"/>
+  <Speed Movement="10" Hit="70"/>
+  <Attacking Player="True" Items="Pizza" Type="Physical" ShortlyStunned="True">
+    <Style Kind="Meele"/>
+    <Stun Time="32" DamageWhileStun="True"/>
+    <KI Details=""></KI>
+  </Attacking>
+</Mob>

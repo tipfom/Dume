@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SlimeBall Name="Normal SlimeSnot" Modifiable="True" Producer="Nature" ChangesChar="False" Type="Snot">
+  <!-- Wenn der Char geändert werden soll, muss ein <Overlay> angegeben werden-->
+  <Resource Sprite="False" X="189" Y="17" Height="28" Width="28" Scale="1"/>
+  <!--Der Scale wird mit dem normalen Scale später multipliziert-->
+  <Data Damage="100" SnotSpeed="20">
+    <ReSnot NeedAmmo="False" SnotSpeed="400"></ReSnot>
+    <!-- Sonst müsste MaxAmmo und Ammo und ReloadTime angegeben werden-->
+    <StartPoint>
+      <Point Direction="Left" X="17" Y="21"/>
+      <Point Direction="Right" X="44" Y="19"/>
+      <Point Direction="Bottom" X="30" Y="23"/>
+      <Point Direction="Top" X="28" Y="0"/>
+      <Point Direction="TopStanding" X="28" Y="0"/>
+      <Point Direction="BottomStanding" X="28" Y="23"/>
+    </StartPoint>
+  </Data>
+  <Description></Description>
+  <Modifier>
+    <Modifier Name="Damage Upgrade" Level="5" Result="Damage+5">Each level will increase your damage by 5</Modifier>
+    <Modifier Name="Speed Upgrade" Level="10" Result="Speed+5">Each level will increase the snots speed by 5</Modifier>
+  </Modifier>
+</SlimeBall>

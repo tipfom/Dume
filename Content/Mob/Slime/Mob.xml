@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Mob Name="Slime" Mode="Ground" Health="45" ScorePoints="5" ID="{4D4F42-534C494D45}">
+
+  <Resources Image="Content/Mob/Slime/mobsprite.png" Width="130" Height="65" ImageScale="150">
+    <!-- ImageScale in Prozent-->
+    <Resource Mode="NormalLeft" Direction="Left" Sprite="True" SpritesheetElement="NormalLeft"  Width="32" Height="30" TextureChangingIntervall="30"/>
+    <Resource Mode="NormalRight" Direction="Right" Sprite="True" SpritesheetElement="NormalRight"  Width="32" Height="30" TextureChangingIntervall="30"/>
+    <Resource Mode="NormalTop" Direction="Top" Sprite="True" SpritesheetElement="NormalTop"  Width="32" Height="30" TextureChangingIntervall="30"/>
+    <Resource Mode="NormalBottom" Direction="Bottom" Sprite="True" SpritesheetElement="NormalBottom"  Width="32" Height="30" TextureChangingIntervall="30"/>
+    <Resource Mode="NormalBottomStanding" Direction="BottomStanding" Sprite="False" X="0" Y="35"  Width="32" Height="30"/>
+    <Resource Mode="NormalTopStanding" Direction="TopStanding" Sprite="False" X="0" Y="2"  Width="32" Height="30"/>
+    <!-- <Resource Mode="Scared" StartIndex="9" -->
+  </Resources>
+  <!-- Warnung : !!!sinnlos!!!-->
+  <!-- Type Main = Hauptimage (unnötig aber yolo); Compression ist selbsterklärend; SpritesheetInfo = -->
+  <!-- Bei Single muss Height und Width angegeben werden-->
+  <NormalBottom>
+    <Sprite X="0" Y="35"/>
+    <Sprite X="33" Y="35"/>
+  </NormalBottom>
+  <NormalLeft>
+    <Sprite X="65" Y="2"/>
+    <Sprite X="65" Y="35"/>
+  </NormalLeft>
+  <NormalRight>
+    <Sprite X="98" Y="2"/>
+    <Sprite X="98" Y="35"/>
+  </NormalRight>
+  <NormalTop>
+    <Sprite X="0" Y="2"/>
+    <Sprite X="33" Y="2"/>
+  </NormalTop>
+
+  <Information>
+    <History>
+      Kamen aus dem Weltall
+      Fressen Pizza
+      Gehen auf dich wegen Pizza
+    </History>
+    <Attack>
+      Wird kurz gestunnt
+      Bei berührung trotzdem damage
+    </Attack>
+  </Information>
+  <Damage Collusion="100" Hit="20"/>
+  <Speed Movement="6" Hit="70"/>
+  <Attacking Player="True" Items="Pizza" Type="Physical" ShortlyStunned="True">
+    <Style Kind="Meele"/>
+    <Stun Time="32" DamageWhileStun="True"/>
+    <KI Details=""></KI>
+  </Attacking>
+
+  <Spawn SpawnRate="7000" Health="100" Shield="20" Image="Content/Mob/Angry_Fuu/Spawn.png" Height="192" Width="192" TextureChangingIntervall="350" ScorePoints="20"> 
+    <Resources>
+      <Resource Health="New" SpritesheetElement="NewSpawnSprite" StartIndex="0"/>
+      <Resource Health="Damaged" SpritesheetElement="DamagedSpawnSprite" StartIndex="3"/>
+      <Resource Health="Destroyed" SpritesheetElement="DestroyedSpawnSprite" StartIndex="5"/>
+    </Resources>
+    <NewSpawnSprite Count="3" Width="64" Height="64">
+      <Sprite ID="1" X="0" Y="0"/>
+      <Sprite ID="2" X="64" Y="0"/>
+      <Sprite ID="3" X="128" Y="0"/>
+    </NewSpawnSprite>
+    <DamagedSpawnSprite Count="2" Width="64" Height="64">
+      <Sprite ID="1" X="0" Y="64"/>
+      <Sprite ID="2" X="64" Y="64"/>
+    </DamagedSpawnSprite>
+    <DestroyedSpawnSprite Count="2" Width="64" Height="64">
+      <Sprite ID="1" X="0" Y="128"/>
+      <Sprite ID="2" X="64" Y="128"/>
+    </DestroyedSpawnSprite>
+  </Spawn>
+</Mob>
